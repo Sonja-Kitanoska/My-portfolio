@@ -1,9 +1,12 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Roboto, Dancing_Script } from "next/font/google";
+import { pages, aboutMeData } from "./data/data";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ subsets: ["latin"], weight: "400" });
+
+// const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Create Next App",
@@ -17,8 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
+      <body className={roboto.className}>
+        <Header name={aboutMeData.name} pages={pages} />
         {children}
         <Footer />
       </body>
