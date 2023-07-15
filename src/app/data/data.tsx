@@ -1,3 +1,6 @@
+import image1 from "../../../public/images/photo-sonja.jpg";
+import image2 from "../../../public/images/photo-ema.jpg";
+
 export const pages = [
   {
     id: 1,
@@ -33,19 +36,19 @@ export const contactMeText = {
 
 export const projects = [
   {
-    title: "Personal Finance Tracker",
+    title: "React App",
     body1:
       "A web application that allows users to track their income and expenses, categorize transactions, and view reports and charts to gain insights into their spending habits.",
     body2: "Technologies used: HTML, CSS, JavaScript, and Flask.",
-    image: "luke-chesser-JKUTrJ4vK00-unsplash.jpg",
+    image: image1,
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/richardbrown/personal-finance-tracker",
+        url: "https://github.com/Sonja-Kitanoska",
       },
       {
         text: "Live Site",
-        url: "https://personal-finance-tracker.richardbrown.net",
+        url: "https://github.com/Sonja-Kitanoska",
       },
     ],
   },
@@ -54,7 +57,7 @@ export const projects = [
     body1:
       "A machine learning model that recommends movies to users based on their viewing history and preferences.",
     body2: "Technologies used: Python, Pandas, NumPy, and scikit-learn",
-    image: "charlesdeluvio-jtmwD4i4v1U-unsplash.png",
+    image: image2,
     links: [
       {
         text: "Source Code",
@@ -63,22 +66,6 @@ export const projects = [
       {
         text: "Live Site",
         url: "https://weather-app.richardbrown.net",
-      },
-    ],
-  },
-  {
-    title: "Tic-Tac-Toe Game",
-    body1: "A simple game of Tic-Tac-Toe built with Python and Pygame. ",
-    body2: "Technologies used: Python and Pygame.",
-    image: "tic_tac_toe.png",
-    links: [
-      {
-        text: "Source Code",
-        url: "https://github.com/richardbrown/tic-tac-toe-app",
-      },
-      {
-        text: "Live Site",
-        url: "https://todo-list-app.richardbrown.net",
       },
     ],
   },
@@ -87,7 +74,7 @@ export const projects = [
     body1:
       "A web application that allows users to search for the current weather conditions in any city in the world.",
     body2: "Technologies used: HTML, CSS, JavaScript, and OpenWeather API.",
-    image: "luke-chesser-JKUTrJ4vK00-unsplash.jpg",
+    image: image1,
     links: [
       {
         text: "Source Code",
@@ -96,40 +83,6 @@ export const projects = [
       {
         text: "Live Site",
         url: "https://weather-app.richardbrown.net",
-      },
-    ],
-  },
-  {
-    title: "Todo List App",
-    body1:
-      "A simple todo list application that allows users to add, edit, and delete tasks, and mark them as complete.",
-    body2: "Technologies used: HTML, CSS, JavaScript, and local storage.",
-    image: "luke-chesser-JKUTrJ4vK00-unsplash.jpg",
-    links: [
-      {
-        text: "Source Code",
-        url: "https://github.com/richardbrown/todo-list-app",
-      },
-      {
-        text: "Live Site",
-        url: "https://todo-list-app.richardbrown.net",
-      },
-    ],
-  },
-  {
-    title: "Recipe Book",
-    body1:
-      "A web application that allows users to search for and save their favorite recipes from around the world.",
-    body2: "Technologies used: HTML, CSS, JavaScript, and Edamam API.",
-    image: "luke-chesser-JKUTrJ4vK00-unsplash.jpg",
-    links: [
-      {
-        text: "Source Code",
-        url: "https://github.com/richardbrown/recipe-book",
-      },
-      {
-        text: "Live Site",
-        url: "https://recipe-book.richardbrown.net",
       },
     ],
   },

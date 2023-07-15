@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="min-h-screen mt-20">
       <div className="flex justify-around mx-20 items-center w-10/12 gap-10 mt-15 mb-30 p-8">
@@ -25,4 +25,6 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
+
+export default Home;
