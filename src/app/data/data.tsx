@@ -34,7 +34,15 @@ export const contactMeText = {
   body: "I am a data scientist and machine learning engineer with a passion for solving complex problems with data.  I bring a unique blend of technical and interpersonal skills to the table. I'm always eager to take on new challenges and collaborate with like-minded individuals. If you'd like to get in touch, simply fill out the form below and I'll get back to you as soon as possible. Looking forward to hearing from you!",
 };
 
-export const projects = [
+type ProjectType = {
+  title: string;
+  body1: string;
+  body2: string;
+  image: object;
+  links: { text: string; url: string }[];
+}[];
+
+export const projects: ProjectType = [
   {
     title: "React App",
     body1:
