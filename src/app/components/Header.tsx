@@ -13,7 +13,7 @@ type HeaderProps = {
 const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" });
 const Header = ({ name, pages }: HeaderProps) => {
   return (
-    <header className="top-0 right-0 left-0 fixed border border-b-grey shadow-lg bg-white">
+    <header className="top-0 right-0 left-0 fixed border border-b-grey shadow-lg bg-white z-10">
       <div className="flex justify-between items-center mx-20 mt-2 mb-2 bg-white z-10">
         <div className="flex flex-col items-center">
           <h1 className="text-xl">{name}</h1>

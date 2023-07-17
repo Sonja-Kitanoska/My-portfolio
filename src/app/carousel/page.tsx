@@ -1,17 +1,85 @@
 "use client";
-import { AnimatePresence, motion } from "framer-motion";
-import { projects } from "../data/data";
+import { useState } from "react";
+import ReactSimplyCarousel from "react-simply-carousel";
 
-export const Notifications = ({ projects }) => (
-  <AnimatePresence>
-    {projects.map((project) => (
-      <motion.li
-        key={project.title}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+function ProjectsList() {
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  return (
+    <div>
+      <ReactSimplyCarousel
+        activeSlideIndex={activeSlideIndex}
+        onRequestChange={setActiveSlideIndex}
+        itemsToShow={1}
+        itemsToScroll={1}
+        forwardBtnProps={{
+          //here you can also pass className, or any other button element attributes
+          style: {
+            alignSelf: "center",
+            background: "black",
+            border: "none",
+            borderRadius: "50%",
+            color: "white",
+            cursor: "pointer",
+            fontSize: "20px",
+            height: 30,
+            lineHeight: 1,
+            textAlign: "center",
+            width: 30,
+          },
+          children: <span>{`>`}</span>,
+        }}
+        backwardBtnProps={{
+          //here you can also pass className, or any other button element attributes
+          style: {
+            alignSelf: "center",
+            background: "black",
+            border: "none",
+            borderRadius: "50%",
+            color: "white",
+            cursor: "pointer",
+            fontSize: "20px",
+            height: 30,
+            lineHeight: 1,
+            textAlign: "center",
+            width: 30,
+          },
+          children: <span>{`<`}</span>,
+        }}
+        responsiveProps={[
+          {
+            itemsToShow: 2,
+            itemsToScroll: 2,
+            minWidth: 768,
+          },
+        ]}
+        speed={400}
+        easing="linear"
       >
-        {project.body1}
-      </motion.li>
-    ))}
-  </AnimatePresence>
-);
+        <div style={{ width: 300, height: 300, background: "#065535" }}>
+          slide 1
+        </div>
+        <div style={{ width: 300, height: 300, background: "#000000" }}>
+          slide 2
+        </div>
+        <div style={{ width: 300, height: 300, background: "#133337" }}>
+          slide 3
+        </div>
+        <div style={{ width: 300, height: 300, background: "#ffc0cb" }}>
+          slide 4
+        </div>
+        <div style={{ width: 300, height: 300, background: "#ffffff" }}>
+          slide 5
+        </div>
+        <div style={{ width: 300, height: 300, background: "#ffe4e1" }}>
+          slide 6
+        </div>
+
+        <div style={{ width: 300, height: 300, background: "#e6e6fa" }}>
+          slide 9
+        </div>
+      </ReactSimplyCarousel>
+    </div>
+  );
+}
+
+export default ProjectsList;

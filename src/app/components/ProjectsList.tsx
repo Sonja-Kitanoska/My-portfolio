@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
 import { projects } from "../../app/data/data";
 import SingleProject from "./SingleProject";
+import { useState } from "react";
+import ReactSimplyCarousel from "react-simply-carousel";
 
 type ProjectType = {
   title: string;

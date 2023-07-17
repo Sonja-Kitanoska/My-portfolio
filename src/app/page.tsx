@@ -16,10 +16,13 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col gap-3 w-1/2 sm:w-full">
-          <h1 className="text-3xl">Hello, I'm Sonja Kitanoska</h1>
+          <h1 className="text-3xl">Hello, I'm Sonja Kitanoska.</h1>
           <p>
             A full-stack developer based in Stockholm. The best developer on the
-            planet Earth.
+            planet Earth. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Quasi vero necessitatibus eaque et magni. Nesciunt repellendus
+            quisquam recusandae aliquam voluptatum eum facere autem eius.
+            Facilis, cum sed? Consectetur, facere hic.
           </p>
         </div>
       </div>
