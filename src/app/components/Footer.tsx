@@ -3,9 +3,9 @@ import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="w-full mt-12 py-4 z-10 absolute mb-0 bg-black py-0">
+    <footer className="w-full mt-12 py-4 z-10 absolute mb-0 bg-zinc-300  py-0">
       <div className="flex items-center justify-center gap-1.5">
-        <p className="text-white">Connect on:</p>
+        <p className="">Connect on:</p>
         <a href="https://github.com/Sonja-Kitanoska" target="_blank">
           <BsGithub className="icons" />
         </a>

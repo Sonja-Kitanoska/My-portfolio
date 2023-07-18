@@ -13,23 +13,43 @@ type HeaderProps = {
 const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" });
 const Header = ({ name, pages }: HeaderProps) => {
   return (
-    <header className="top-0 right-0 left-0 fixed border border-b-grey shadow-lg bg-white z-10">
-      <div className="flex justify-between items-center mx-20 mt-2 mb-2 bg-white z-10">
+    <header className="top-0 right-0 left-0 absolute z-20 border-b-2">
+      <div className="flex justify-between items-center mx-20 mt-2 mb-2">
         <div className="flex flex-col items-center">
-          <h1 className="text-xl">{name}</h1>
-          <p className={`${dancingScript.className} text-xl -mt-1.5`}>
+          <h1 className="text-2xl text-blue tracking-tight">{name}</h1>
+          <p
+            className={`${dancingScript.className} text-xl text-smokey -mt-1.5`}
+          >
             Developer
           </p>
         </div>
         <nav className="flex gap-10 px-3 pt-3 justify-items-end">
           {pages.map((page) => (
-            <Link
-              href={page.link}
-              key={page.id}
-              className=" hover:underline underline-offset-2 hover:scale-105"
-            >
-              {page.label}
-            </Link>
+            <div>
+              <Link
+                className=" 
+                bg-blue rounded-full text-white font-medium px-4 py-1  
+              hover:bg-zinc-200
+              hover:text-black
+              hover:rounded-full  
+              hover:font-medium 
+              focus:bg-zinc-200
+              focus:font-medium
+              focus:text-black
+              active:bg-zinc-200
+              active:text-black
+              active:font-medium
+              px-4 py-1"
+                href={page.link}
+                key={page.id}
+                // className=" px-4 py-1 hover:bg-white hover:text-blue-600 hover:rounded-full active:bg-blue-200 active:text-blue-600 focus:bg-white focus:rounded-full
+                // focus:text-blue-600"
+
+                // " hover:underline underline-offset-2 hover:scale-105 font-medium"
+              >
+                {page.label}
+              </Link>
+            </div>
           ))}
         </nav>
       </div>

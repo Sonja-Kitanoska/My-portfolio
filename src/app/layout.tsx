@@ -20,7 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body
+        className="bg-gray min-h-screen"
+
+        // className={roboto.className}
+      >
         <Header name={aboutMeData.name} pages={pages} />
         {children}
         <Footer />

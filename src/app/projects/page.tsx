@@ -17,10 +17,12 @@ import styles from "./Projects.module.css";
 
 const Projects = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+
   return (
     <main className="w-full min-h-screen flex flex-col p-12 mt-8 justify-center">
-      <h1 className="text-2xl  self-center">My Projects</h1>
-
+      <h1 className="text-white text-3xl self-center mb-5 font-black">
+        My Projects
+      </h1>
       <div>
         <ReactSimplyCarousel
           activeSlideIndex={activeSlideIndex}
@@ -72,7 +74,7 @@ const Projects = () => {
           easing="linear"
         >
           {projects.map((project) => (
-            <div className="flex w-96 h-96">
+            <div className="articleSize">
               <SingleProject project={project}></SingleProject>
             </div>
           ))}

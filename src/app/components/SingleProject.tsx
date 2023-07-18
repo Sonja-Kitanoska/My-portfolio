@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const SingleProject = ({ project }) => {
   return (
-    <article className="flex w-full rounded-lg border border-solid border-black bg-white shadow-black shadow-xl p-9">
+    <article className="flex w-full rounded-lg border border-solid border-black bg-zinc-300 shadow-black shadow-xl p-9 bg-smokey">
       <div className=" flex items-center justify-center w-1/2 ">
         <Image
           className="w-full object-contain object-center h-48 w-96"
