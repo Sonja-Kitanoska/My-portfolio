@@ -16,11 +16,41 @@ import { AnimatePresence, motion } from "framer-motion";
 //   links: { text: string; url: string }[];
 // }[];
 
+const variants = {
+  initial: (direction: number) => {
+    return {
+      x: direction > 0 ? 100 : -100,
+      opacity: 1,
+    };
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      x: { type: "spring", stiffness: 300, damping: 30 },
+      opacity: { duration: 0.2 },
+    },
+    // transition: "ease-in",
+  },
+  exit: (direction: number) => {
+    return {
+      x: direction > 0 ? -100 : 100,
+      opacity: 0,
+      transition: {
+        x: { type: "spring", stiffness: 300, damping: 30 },
+        opacity: { duration: 0.2 },
+      },
+    };
+  },
+};
+
 const Projects = () => {
   const [index, setIndex] = useState(0);
   const [project, setProject] = useState(projects[0]);
+  const [direction, setDirection] = useState(0);
 
   const prevStep = () => {
+    setDirection(1);
     if (index === 0) {
       setIndex(projects.length - 1);
       setProject(projects[projects.length - 1]);
@@ -30,6 +60,7 @@ const Projects = () => {
     setProject(projects[index - 1]);
   };
   const nextStep = () => {
+    setDirection(-1);
     if (index === projects.length - 1) {
       setIndex(0);
       setProject(projects[0]);
@@ -46,23 +77,35 @@ const Projects = () => {
         My Projects{" "}
       </h1>
       <motion.div className="flex min-w-full overflow-hidden relative w-full">
-        <motion.div className="w-full h-full">
-          <SingleProject project={project} i={index}></SingleProject>
-          <button
-            onClick={() => {
-              prevStep();
-            }}
-            className="absolute cursor-pointer top-1/2 left-2 -translate-y-1/2"
+        <AnimatePresence initial={false} custom={direction}>
+          <motion.div
+            key={index}
+            variants={variants}
+            animate="animate"
+            initial="initial"
+            exit="exit"
+            custom={direction}
+            className="w-full h-full"
           >
-            ⬅️
-          </button>
-          <button
-            onClick={() => nextStep()}
-            className="absolute cursor-pointer top-1/2 right-2 -translate-y-1/2"
-          >
-            ➡️
-          </button>
-        </motion.div>
+            <SingleProject project={project} i={index}></SingleProject>
+          </motion.div>
+        </AnimatePresence>
+        <button
+          onClick={() => {
+            prevStep();
+          }}
+          className="absolute cursor-pointer top-1/2 left-2 -translate-y-1/2"
+        >
+          ⬅️
+        </button>
+        <button
+          onClick={() => {
+            nextStep();
+          }}
+          className="absolute cursor-pointer top-1/2 right-2 -translate-y-1/2"
+        >
+          ➡️
+        </button>
       </motion.div>
     </motion.main>
   );
