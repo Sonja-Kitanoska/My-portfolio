@@ -21,10 +21,7 @@ const Home = () => {
           </h1>
           <p className="text-smokey">
             A full-stack developer based in Stockholm. The best developer on the
-            planet Earth. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Quasi vero necessitatibus eaque et magni. Nesciunt repellendus
-            quisquam recusandae aliquam voluptatum eum facere autem eius.
-            Facilis, cum sed? Consectetur, facere hic.
+            planet Earth. I haven't been to other planets yet.
           </p>
         </div>
       </div>

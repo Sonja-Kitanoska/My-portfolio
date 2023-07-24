@@ -1,5 +1,6 @@
 import image1 from "../../../public/images/photo-sonja.jpg";
 import image2 from "../../../public/images/photo-ema.jpg";
+import uuid4 from "uuid4";
 
 export const pages = [
   {
@@ -35,6 +36,7 @@ export const contactMeText = {
 };
 
 type ProjectType = {
+  id: number;
   title: string;
   body1: string;
   body2: string;
@@ -44,6 +46,7 @@ type ProjectType = {
 
 export const projects: ProjectType = [
   {
+    id: 1,
     title: "React App",
     body1:
       "A web application that allows users to track their income and expenses, categorize transactions, and view reports and charts to gain insights into their spending habits.",
@@ -61,6 +64,7 @@ export const projects: ProjectType = [
     ],
   },
   {
+    id: 2,
     title: "Movie Recommendation System",
     body1:
       "A machine learning model that recommends movies to users based on their viewing history and preferences.",
@@ -78,6 +82,7 @@ export const projects: ProjectType = [
     ],
   },
   {
+    id: 3,
     title: "Weather App",
     body1:
       "A web application that allows users to search for the current weather conditions in any city in the world.",

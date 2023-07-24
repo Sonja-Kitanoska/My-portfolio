@@ -1,6 +1,7 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 // type ProjectType = {
 //   title: string;
@@ -10,16 +11,19 @@ import Image from "next/image";
 //   links: { text: string; url: string }[];
 // };
 
-const SingleProject = ({ project }) => {
+const SingleProject = ({ project, i }) => {
   return (
-    <article className="flex w-full rounded-lg border border-solid border-black bg-zinc-300 shadow-black shadow-xl p-9 bg-smokey">
+    <article
+      key={i}
+      className="flex w-screen rounded-lg border border-solid border-black bg-zinc-300 shadow-black shadow-xl p-9 bg-smokey"
+    >
       <div className=" flex items-center justify-center w-1/2 ">
         <Image
           className="w-full object-contain object-center h-48 w-96"
           src={project.image}
           alt="photo of the project"
-          width={200}
-          height={300}
+          // width={200}
+          // height={300}
         />
       </div>
       <div className="w-1/2 flex flex-col items-center justify-center">
