@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -23,6 +24,14 @@ const Home = () => {
             A full-stack developer based in Stockholm. The best developer on the
             planet Earth. I haven't been to other planets yet.
           </p>
+          <Link href="mailto:avramoskamkd@gmail.com">
+            <button
+              type="button"
+              className="text-white bg-blue w-1/6 rounded-full px-4 py-1"
+            >
+              Email me
+            </button>
+          </Link>
         </div>
       </div>
     </main>

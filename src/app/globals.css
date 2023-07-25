@@ -17,10 +17,16 @@
   color: #5b6be3;
 }
 .bg-blue {
+  /* background-color: #3466aa; */
   background-color: #5b6be3;
 }
 .bg-gray {
   background-color: rgba(52, 51, 51);
+  /* background-color: #808080; */
+}
+
+.bg-light {
+  background-color: #82b7dc;
 }
 
 .text-smokey {
@@ -36,6 +42,24 @@
   height: 20rem;
 }
 
+.button {
+  /* top: calc(50% - 10px); */
+  position: absolute;
+  /* background: white; */
+  color: white;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 22px;
+  z-index: 2;
+  top: 7rem;
+}
 /* .item {
   min-height: 40rem;
   width: 33%;

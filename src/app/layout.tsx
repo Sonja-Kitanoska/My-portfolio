@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="bg-gray min-h-screen"
+        className="bg-gray min-h-screen min-w-screen"
 
         // className={roboto.className}
       >
