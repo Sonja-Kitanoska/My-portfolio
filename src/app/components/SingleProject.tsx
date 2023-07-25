@@ -15,7 +15,8 @@ const SingleProject = ({ project, i }) => {
   return (
     <article
       key={i}
-      className="flex w-screen rounded-lg border border-solid border-black bg-zinc-300 shadow-black shadow-xl p-9 bg-smokey"
+      className="flex w-full rounded-lg border border-solid border-black bg-zinc-300 shadow-black shadow-xl p-9
+   "
     >
       <div className=" flex items-center justify-center w-1/2 ">
         <Image
@@ -34,16 +35,23 @@ const SingleProject = ({ project, i }) => {
         <p>{project.body1}</p>
 
         <div className="flex gap-2 self-start">
-          <button className="rounded-lg" type="button">
-            <Link href="https://github.com/Sonja-Kitanoska" target="_blank">
+          <Link href="https://github.com/Sonja-Kitanoska" target="_blank">
+            <button
+              type="button"
+              className="rounded-full bg-blue text-white font-semibold p-1 px-4 py-1 mt-1"
+            >
               Source code
-            </Link>
-          </button>
-          <button>
-            <Link href="https://github.com/Sonja-Kitanoska" target="_blank">
+            </button>
+          </Link>
+
+          <Link href="https://github.com/Sonja-Kitanoska" target="_blank">
+            <button
+              type="button"
+              className="rounded-full bg-blue text-white font-semibold p-1 px-4 py-1 mt-1"
+            >
               Visit the site
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
       </div>
     </article>

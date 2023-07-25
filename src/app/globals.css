@@ -27,6 +27,10 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+.bg-smokey {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .articleSize {
   width: 60rem;
   height: 20rem;

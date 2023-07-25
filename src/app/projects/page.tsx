@@ -19,8 +19,8 @@ import { AnimatePresence, motion } from "framer-motion";
 const variants = {
   initial: (direction: number) => {
     return {
-      x: direction > 0 ? 100 : -100,
-      opacity: 1,
+      x: direction > 0 ? 200 : -200,
+      opacity: 0,
     };
   },
   animate: {
@@ -34,7 +34,7 @@ const variants = {
   },
   exit: (direction: number) => {
     return {
-      x: direction > 0 ? -100 : 100,
+      x: direction > 0 ? -200 : 200,
       opacity: 0,
       transition: {
         x: { type: "spring", stiffness: 300, damping: 30 },
@@ -43,6 +43,23 @@ const variants = {
     };
   },
 };
+// initial: (direction: number) => {
+//   return {
+//     x: direction > 0 ? 200 : -200,
+//     opacity: 0,
+//   };
+// },
+// animate: {
+//   zIndex: 1,
+//   x: 0,
+//   opacity: 1,
+// },
+// exit: (direction: number) => {
+//   return {
+//     zIndex: 0,
+//     x: direction < 0 ? 200 : -200,
+//     opacity: 0,
+//   };
 
 const Projects = () => {
   const [index, setIndex] = useState(0);
@@ -71,21 +88,20 @@ const Projects = () => {
   };
 
   return (
-    <motion.main className="w-full min-h-screen flex flex-col p-12 mt-8 justify-center">
-      {" "}
-      <h1 className="text-white text-3xl self-center mb-5 font-black">
+    <main className=" w-screen justify-center align-items-center p-14 h-screen">
+      <h1 className="  text-white text-3xl self-center text-center mt-16 mb-2 font-black">
         My Projects{" "}
       </h1>
-      <motion.div className="flex min-w-full overflow-hidden relative w-full">
+      <div className="w-full relative flex align-items-center justify-items-center mt-10">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={index}
+            custom={direction}
             variants={variants}
             animate="animate"
             initial="initial"
             exit="exit"
-            custom={direction}
-            className="w-full h-full"
+            className="absolute top-0 left-0 right-0 bottom-0"
           >
             <SingleProject project={project} i={index}></SingleProject>
           </motion.div>
@@ -94,7 +110,7 @@ const Projects = () => {
           onClick={() => {
             prevStep();
           }}
-          className="absolute cursor-pointer top-1/2 left-2 -translate-y-1/2"
+          className="absolute top-28 left-2"
         >
           ⬅️
         </button>
@@ -102,12 +118,12 @@ const Projects = () => {
           onClick={() => {
             nextStep();
           }}
-          className="absolute cursor-pointer top-1/2 right-2 -translate-y-1/2"
+          className="absolute cursor-pointer top-28 right-2"
         >
           ➡️
         </button>
-      </motion.div>
-    </motion.main>
+      </div>
+    </main>
   );
 };
 
