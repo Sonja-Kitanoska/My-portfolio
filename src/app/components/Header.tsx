@@ -25,21 +25,10 @@ const Header = ({ name, pages }: HeaderProps) => {
         </div>
         <nav className="flex gap-10 px-3 pt-3 justify-items-end">
           {pages.map((page) => (
-            <div>
+            <div className="">
               <Link
-                className=" 
-                bg-blue rounded-full text-white font-medium px-4 py-1  
-              hover:bg-zinc-200
-              hover:text-black
-              hover:rounded-full  
-              hover:font-medium 
-              focus:bg-zinc-200
-              focus:font-medium
-              focus:text-black
-              active:bg-zinc-200
-              active:text-black
-              active:font-medium
-              px-4 py-1"
+                className="bg-blue rounded-xl text-white font-medium px-4 py-1 hover:bg-zinc-200 hover:text-black hover:font-medium focus:bg-zinc-200 focus:font-medium focus:text-black active:bg-zinc-200 active:text-black active:font-medium
+              "
                 href={page.link}
                 key={page.id}
                 // className=" px-4 py-1 hover:bg-white hover:text-blue-600 hover:rounded-full active:bg-blue-200 active:text-blue-600 focus:bg-white focus:rounded-full

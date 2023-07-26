@@ -34,7 +34,7 @@ const SingleProject = ({ project, i }) => {
         </h2>
         <p>{project.body1}</p>
 
-        <div className="flex gap-2 self-start">
+        <div className="flex gap-2 self-start mt-3">
           <Link href="https://github.com/Sonja-Kitanoska" target="_blank">
             <button
               type="button"

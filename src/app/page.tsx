@@ -21,13 +21,13 @@ const Home = () => {
             Hello, I'm Sonja Kitanoska.
           </h1>
           <p className="text-smokey">
-            A full-stack developer based in Stockholm. The best developer on the
+            A full-stack developer based in Stockholm. The best developer on
             planet Earth. I haven't been to other planets yet.
           </p>
           <Link href="mailto:avramoskamkd@gmail.com">
             <button
               type="button"
-              className="text-white bg-blue w-1/6 rounded-full px-4 py-1"
+              className="text-white bg-blue w-1/6 rounded-xl px-4 py-1"
             >
               Email me
             </button>
