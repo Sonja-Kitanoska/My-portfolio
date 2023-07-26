@@ -35,22 +35,20 @@ export const contactMeText = {
   body: "I am a data scientist and machine learning engineer with a passion for solving complex problems with data.  I bring a unique blend of technical and interpersonal skills to the table. I'm always eager to take on new challenges and collaborate with like-minded individuals. If you'd like to get in touch, simply fill out the form below and I'll get back to you as soon as possible. Looking forward to hearing from you!",
 };
 
-type ProjectType = {
-  id: number;
-  title: string;
-  body1: string;
-  body2: string;
-  image: object;
-  links: { text: string; url: string }[];
-}[];
+// export type ProjectType = {
+//   id: number;
+//   title: string;
+//   body1: string;
+//   image: object;
+//   links: { text: string; url: string }[];
+// };
 
-export const projects: ProjectType = [
+export const projects = [
   {
     id: 1,
     title: "React App",
     body1:
       "A web application that allows users to track their income and expenses, categorize transactions, and view reports and charts to gain insights into their spending habits.",
-    body2: "Technologies used: HTML, CSS, JavaScript, and Flask.",
     image: image1,
     links: [
       {
@@ -68,7 +66,6 @@ export const projects: ProjectType = [
     title: "Movie Recommendation System",
     body1:
       "A machine learning model that recommends movies to users based on their viewing history and preferences.",
-    body2: "Technologies used: Python, Pandas, NumPy, and scikit-learn",
     image: image2,
     links: [
       {
@@ -86,7 +83,6 @@ export const projects: ProjectType = [
     title: "Weather App",
     body1:
       "A web application that allows users to search for the current weather conditions in any city in the world.",
-    body2: "Technologies used: HTML, CSS, JavaScript, and OpenWeather API.",
     image: image1,
     links: [
       {

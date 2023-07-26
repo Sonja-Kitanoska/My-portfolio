@@ -5,16 +5,17 @@ import { projects } from "../data/data";
 import { useState } from "react";
 import ReactSimplyCarousel from "react-simply-carousel";
 import SingleProject from "../components/SingleProject";
-import styles from "./Projects.module.css";
-import { AnimatePresence, motion } from "framer-motion";
 
-// type ProjectType = {
-//   title: string;
-//   body1: string;
-//   body2: string;
-//   image: object;
-//   links: { text: string; url: string }[];
-// }[];
+import { AnimatePresence, motion } from "framer-motion";
+import { StaticImageData } from "next/image";
+
+export type ProjectType = {
+  id: number;
+  title: string;
+  body1: string;
+  image: StaticImageData;
+  links: { text: string; url: string }[];
+};
 
 const variants = {
   initial: (direction: number) => {
@@ -63,7 +64,7 @@ const variants = {
 
 const Projects = () => {
   const [index, setIndex] = useState(0);
-  const [project, setProject] = useState(projects[0]);
+  const [project, setProject] = useState<ProjectType>(projects[0]);
   const [direction, setDirection] = useState(0);
 
   const prevStep = () => {
@@ -103,7 +104,7 @@ const Projects = () => {
             exit="exit"
             className="absolute top-0 left-0 right-0 bottom-0 px-3"
           >
-            <SingleProject project={project} i={index}></SingleProject>
+            <SingleProject {...project}></SingleProject>
           </motion.div>
         </AnimatePresence>
         <button
@@ -111,7 +112,7 @@ const Projects = () => {
             prevStep();
           }}
           // className="absolute top-28 -left-5"
-          className="button -left-7 -scale-x-100 bg-blue"
+          className="button -left-2 -scale-x-100 bg-blue"
         >
           ‣
         </button>
@@ -119,7 +120,7 @@ const Projects = () => {
           onClick={() => {
             nextStep();
           }}
-          className="button -right-7 bg-blue"
+          className="button -right-2 bg-blue"
           // className="absolute cursor-pointer top-28 -right-5"
         >
           ‣

@@ -1,20 +1,14 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
-// type ProjectType = {
-//   title: string;
-//   body1: string;
-//   body2?: string;
-//   image: object;
-//   links: { text: string; url: string }[];
-// };
+import type { ProjectType } from "../../app/projects/page";
 
-const SingleProject = ({ project, i }) => {
+const SingleProject: React.FC<ProjectType> = (project) => {
+  const { id, title, body1, image, links } = project;
   return (
     <article
-      key={i}
+      key={project.id}
       className="flex w-full rounded-lg border border-solid border-black bg-zinc-300 shadow-black shadow-xl p-9
    "
     >
