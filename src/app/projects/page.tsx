@@ -13,6 +13,7 @@ export type ProjectType = {
   id: number;
   title: string;
   body1: string;
+  body2: string;
   image: StaticImageData;
   links: { text: string; url: string }[];
 };

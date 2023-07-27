@@ -16,7 +16,7 @@ export const ProjectsList = () => {
   return (
     <>
       {projects.map((project) => (
-        <SingleProject project={project}></SingleProject>
+        <SingleProject {...project}></SingleProject>
       ))}{" "}
     </>
   );

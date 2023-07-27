@@ -35,47 +35,41 @@ export const contactMeText = {
   body: "I am a data scientist and machine learning engineer with a passion for solving complex problems with data.  I bring a unique blend of technical and interpersonal skills to the table. I'm always eager to take on new challenges and collaborate with like-minded individuals. If you'd like to get in touch, simply fill out the form below and I'll get back to you as soon as possible. Looking forward to hearing from you!",
 };
 
-// export type ProjectType = {
-//   id: number;
-//   title: string;
-//   body1: string;
-//   image: object;
-//   links: { text: string; url: string }[];
-// };
-
 export const projects = [
   {
     id: 1,
-    title: "React App",
+    title: "[project Project]",
     body1:
-      "A web application that allows users to track their income and expenses, categorize transactions, and view reports and charts to gain insights into their spending habits.",
+      "[project Project] is a collaborative and interactive project management application. It was ideated in two hours, planned in a day, then developed within the span of 11 days by four full-stack Javascript students as part of the winter 2023 class from the School of Applied Learning and Technology (</salt>).",
+    body2: "TypeScript, NextJS v.13, FireBase Auth, FireStore, Bing Image API ",
     image: image1,
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/Sonja-Kitanoska",
+        url: "https://github.com/Sonja-Kitanoska/projectProject",
       },
       {
         text: "Live Site",
-        url: "https://github.com/Sonja-Kitanoska",
+        url: "https://project-project-nine.vercel.app/",
       },
     ],
   },
   {
     id: 2,
-    title: "Movie Recommendation System",
+    title: "React Gallery",
     body1:
-      "A machine learning model that recommends movies to users based on their viewing history and preferences.",
+      "This project was built as part of a mob-programming exercise at the School of AppliedTechnology (</salt>). It was built using React with the typescript template. Routing was done using both React Router and React Router Link.",
+    body2: "Typescript, React, API Unsplash",
     image: image2,
     links: [
       {
         text: "Source Code",
-        url: "https://github.com/richardbrown/weather-app",
+        url: "https://github.com/Sonja-Kitanoska/react-gallery",
       },
-      {
-        text: "Live Site",
-        url: "https://weather-app.richardbrown.net",
-      },
+      // {
+      //   text: "Live Site",
+      //   url: "https://weather-app.richardbrown.net",
+      // },
     ],
   },
   {
@@ -83,6 +77,7 @@ export const projects = [
     title: "Weather App",
     body1:
       "A web application that allows users to search for the current weather conditions in any city in the world.",
+    body2: "",
     image: image1,
     links: [
       {
