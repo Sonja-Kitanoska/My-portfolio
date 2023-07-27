@@ -8,7 +8,6 @@ const SingleProject: React.FC<ProjectType> = (project) => {
   const { id, title, body1, body2, image, links } = project;
   return (
     <article
-      key={id}
       className="flex w-full rounded-lg border border-solid border-black bg-zinc-300 shadow-black shadow-xl p-9
    "
     >
@@ -32,7 +31,7 @@ const SingleProject: React.FC<ProjectType> = (project) => {
 
         <div className="flex gap-2 self-start mt-3">
           {links.map((link) => (
-            <div>
+            <div key={Math.random()}>
               <Link href={link.url} target="_blank">
                 <button
                   type="button"

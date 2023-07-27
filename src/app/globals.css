@@ -5,6 +5,7 @@
 .icons {
   @apply text-2xl sm:text-3xl m-2;
 }
+
 .profileImage {
   @apply rounded-full;
   width: 100%;
@@ -16,10 +17,36 @@
 .text-blue {
   color: #5b6be3;
 }
-.bg-blue {
-  /* background-color: #3466aa; */
-  background-color: #5b6be3;
+@layer utilities {
+  .bg-blue {
+    background-color: #5b6be3;
+
+    background-image: linear-gradient(90deg, #2980b9, #2c3e50);
+  }
 }
+
+@layer utilities {
+  .text-blue {
+    background-image: linear-gradient(360deg, white, #2c3e50);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.orange {
+  background-image: linear-gradient(360deg, orange, #ed4f05);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* .bg-blue {
+  background-color: #5b6be3;
+} */
+
+.darkBlue {
+  background-color: #0c1c24;
+}
+
 .bg-gray {
   background-color: rgba(52, 51, 51);
   /* background-color: #808080; */

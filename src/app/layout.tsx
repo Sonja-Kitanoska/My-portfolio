@@ -21,11 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="bg-gray min-h-screen min-w-screen"
+        className="darkBlue min-h-screen min-w-screen"
 
         // className={roboto.className}
       >
-        <Header name={aboutMeData.name} pages={pages} />
+        <Header name="Sonja Kitanoska" pages={pages} />
         {children}
         <Footer />
       </body>
