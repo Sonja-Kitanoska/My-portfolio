@@ -4,6 +4,7 @@
 
 .icons {
   @apply text-2xl sm:text-3xl m-2;
+  color: #0c1c24;
 }
 
 .profileImage {
@@ -39,12 +40,17 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* .bg-blue {
-  background-color: #5b6be3;
-} */
+.fontSize {
+  @apply text-xs
+  md:text-sm lg:text-base xl:text-lg;
+}
 
 .darkBlue {
   background-color: #0c1c24;
+}
+
+.darkBlueFont {
+  color: #0c1c24;
 }
 
 .bg-gray {

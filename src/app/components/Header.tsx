@@ -28,7 +28,7 @@ const Header = ({ name, pages }: HeaderProps) => {
         <nav className="flex gap-10 px-3 pt-3 justify-items-end">
           {pages.map((page) => (
             <Link
-              className="text-xs md:text-sm lg:text-base xl:text-lg bg-zinc-200 rounded-xl text-black font-medium px-4 py-1 hover:bg-blue hover:text-white hover:font-medium focus:bg-blue focus:font-medium focus:text-white active:bg-blue active:text-white active:font-medium
+              className="fontSize bg-zinc-200 rounded-xl text-black font-medium px-4 py-1 hover:bg-blue hover:text-white hover:font-medium focus:bg-blue focus:font-medium focus:text-white active:bg-blue active:text-white active:font-medium
               "
               href={page.link}
               key={page.id}
