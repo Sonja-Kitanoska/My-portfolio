@@ -14,11 +14,13 @@ const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" });
 const Header = ({ name, pages }: HeaderProps) => {
   return (
     <header className="top-0 right-0 left-0 absolute z-20 border-b-2">
-      <div className="flex justify-between items-center mx-20 mt-2 mb-2">
+      <div className="flex flex-col md:flex md:flex-row justify-between items-center mx-20 mt-2 mb-2 ">
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl font-bold orange tracking-tight">{name}</h1>
+          <h1 className=" text-2xl lg:text-3xl font-bold orange tracking-tight">
+            {name}
+          </h1>
           <p
-            className={`${dancingScript.className} text-xl text-smokey -mt-1.5`}
+            className={`${dancingScript.className} md:text-xl lg:text-2xl text-smokey -mt-1.5`}
           >
             Developer
           </p>
@@ -26,7 +28,7 @@ const Header = ({ name, pages }: HeaderProps) => {
         <nav className="flex gap-10 px-3 pt-3 justify-items-end">
           {pages.map((page) => (
             <Link
-              className="bg-zinc-200 rounded-xl text-black font-medium px-4 py-1 hover:bg-blue hover:text-white hover:font-medium focus:bg-blue focus:font-medium focus:text-white active:bg-blue active:text-white active:font-medium
+              className="text-xs md:text-sm lg:text-base xl:text-lg bg-zinc-200 rounded-xl text-black font-medium px-4 py-1 hover:bg-blue hover:text-white hover:font-medium focus:bg-blue focus:font-medium focus:text-white active:bg-blue active:text-white active:font-medium
               "
               href={page.link}
               key={page.id}
