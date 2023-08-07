@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <main className=" mt-20 mb-4 darkBlue min-h-screen ">
+    <main className=" mt-20 mb-4 darkBlue min-h-screen">
       <div className="flex flex-col md:flex-row md:justify-items-center md:items-center gap-10 mt-36 px-6 sm:px-10 w-full md:mt-48">
         <div className="w-1/2">
           <Image
@@ -23,7 +23,7 @@ const Home = () => {
               I'm Sonja Kitanoska.
             </h1>
           </div>
-          <p className="text-smokey text-xl ">
+          <p className="text-smokey">
             A full-stack developer based in Stockholm. The best developer on
             planet Earth. I haven't been to other planets yet.
           </p>

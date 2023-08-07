@@ -40,9 +40,9 @@
   -webkit-text-fill-color: transparent;
 }
 
-.fontSize {
-  @apply text-xs
-  md:text-sm lg:text-base xl:text-lg;
+.font-size {
+  @apply text-base
+  md:text-lg lg:text-xl xl:text-2xl;
 }
 
 .darkBlue {
