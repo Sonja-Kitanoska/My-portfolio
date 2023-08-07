@@ -8,22 +8,22 @@ const SingleProject: React.FC<ProjectType> = (project) => {
   const { id, title, body1, body2, image, links } = project;
   return (
     <article
-      className="flex w-full rounded-lg border border-solid border-black bg-zinc-300 shadow-black shadow-xl p-9
+      className="flex flex-col md:flex md:flex-row rounded-lg border border-solid border-black bg-zinc-300 shadow-black shadow-xl p-9
    "
     >
-      <div className=" flex items-center justify-center w-1/2 ">
+      <div className="md:flex md:items-center md:justify-center md:w-1/2">
         <Image
           priority
-          className="w-full object-contain object-center h-48 w-96"
+          className="w-full object-contain object-center h-48 w-96  "
           src={image}
           alt="photo of the project"
           width={200}
           height={300}
         />
       </div>
-      <div className="w-1/2 flex flex-col   p-1">
-        <h2 className=" text-2xl font-semibold self-start  mb-2"> {title}</h2>
-        <p className=" shrink">{body1}</p>
+      <div className="flex mt-8 flex-col p-1 md:w-1/2">
+        <h2 className=" text-2xl font-semibold mb-2"> {title}</h2>
+        <p className="">{body1}</p>
         <p className=" mt-1 ">
           <span className="font-semibold ">Technologies used: </span>
           {body2}
@@ -35,7 +35,7 @@ const SingleProject: React.FC<ProjectType> = (project) => {
               <Link href={link.url} target="_blank">
                 <button
                   type="button"
-                  className="rounded-xl bg-blue text-white font-semibold p-1 px-4 py-1 mt-1"
+                  className="rounded-xl bg-blue text-white font-semibold p-1 px-4 py-1 -mt-1"
                 >
                   {link.text}
                 </button>

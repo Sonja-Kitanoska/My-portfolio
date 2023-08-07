@@ -90,11 +90,11 @@ const Projects = () => {
   };
 
   return (
-    <main className=" w-full justify-center align-items-center p-14 h-screen">
-      <h1 className="  text-white text-3xl self-center text-center mt-16 mb-2 font-black">
+    <main className="min-h-screen justify-center align-items-center p-6 md:p-14">
+      <h1 className=" text-white text-3xl self-center text-center mt-32 mb-2 font-black">
         My Projects{" "}
       </h1>
-      <div className="w-full relative flex align-items-center justify-items-center mt-10">
+      <div className="w-full min-h-screen relative flex align-items-center justify-items-center mt-2">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={index}
@@ -103,7 +103,7 @@ const Projects = () => {
             animate="animate"
             initial="initial"
             exit="exit"
-            className="absolute top-0 left-0 right-0 bottom-0 px-3"
+            className="absolute top-0 left-0 right-0 bottom-0 h-screen"
           >
             <SingleProject {...project}></SingleProject>
           </motion.div>
@@ -112,8 +112,7 @@ const Projects = () => {
           onClick={() => {
             prevStep();
           }}
-          // className="absolute top-28 -left-5"
-          className="button -left-2 -scale-x-100 bg-blue"
+          className="button absolute -left-4 top-0  -scale-x-100 bg-blue"
         >
           ‣
         </button>
@@ -121,8 +120,7 @@ const Projects = () => {
           onClick={() => {
             nextStep();
           }}
-          className="button -right-2 bg-blue"
-          // className="absolute cursor-pointer top-28 -right-5"
+          className="button top-0 -right-4 bg-blue"
         >
           ‣
         </button>

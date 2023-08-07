@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="w-screen py-4 z-20 absolute mb-0 bg-zinc-300 fontSize ">
+    <footer className="w-screen py-4 z-20 absolute mt-4 mb-0 bg-zinc-300 font-size ">
       <div className="flex flex-col items-center justify-center gap-1.5 w-full">
         <p className="fontSize">Connect on:</p>
         <div className="flex -mt-2">

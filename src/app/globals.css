@@ -42,7 +42,7 @@
 
 .font-size {
   @apply text-base
-  md:text-lg lg:text-xl xl:text-2xl;
+  lg:text-lg xl:text-xl;
 }
 
 .darkBlue {
@@ -90,7 +90,6 @@
   font-weight: bold;
   font-size: 30px;
   z-index: 2;
-  top: 7rem;
 }
 /* .item {
   min-height: 40rem;
