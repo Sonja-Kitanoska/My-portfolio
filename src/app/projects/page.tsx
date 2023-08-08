@@ -1,9 +1,8 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import { projects } from "../data/data";
 
 import { useState } from "react";
-import ReactSimplyCarousel from "react-simply-carousel";
 import SingleProject from "../components/SingleProject";
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -32,7 +31,6 @@ const variants = {
       x: { type: "spring", stiffness: 300, damping: 30 },
       opacity: { duration: 0.2 },
     },
-    // transition: "ease-in",
   },
   exit: (direction: number) => {
     return {
@@ -45,23 +43,6 @@ const variants = {
     };
   },
 };
-// initial: (direction: number) => {
-//   return {
-//     x: direction > 0 ? 200 : -200,
-//     opacity: 0,
-//   };
-// },
-// animate: {
-//   zIndex: 1,
-//   x: 0,
-//   opacity: 1,
-// },
-// exit: (direction: number) => {
-//   return {
-//     zIndex: 0,
-//     x: direction < 0 ? 200 : -200,
-//     opacity: 0,
-//   };
 
 const Projects = () => {
   const [index, setIndex] = useState(0);
@@ -128,74 +109,5 @@ const Projects = () => {
     </main>
   );
 };
-
-// const Projects = () => {
-//   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-
-//   return (
-//     <main className="w-full min-h-screen flex flex-col p-12 mt-8 justify-center">
-//       <h1 className="text-white text-3xl self-center mb-5 font-black">
-//         My Projects
-//       </h1>
-//       <div>
-//         <ReactSimplyCarousel
-//           activeSlideIndex={activeSlideIndex}
-//           onRequestChange={setActiveSlideIndex}
-//           itemsToShow={1}
-//           itemsToScroll={1}
-//           forwardBtnProps={{
-//             //here you can also pass className, or any other button element attributes
-//             style: {
-//               alignSelf: "center",
-//               background: "black",
-//               border: "none",
-//               borderRadius: "50%",
-//               color: "white",
-//               cursor: "pointer",
-//               fontSize: "20px",
-//               height: 30,
-//               lineHeight: 1,
-//               textAlign: "center",
-//               width: 30,
-//             },
-//             children: <span>{`>`}</span>,
-//           }}
-//           backwardBtnProps={{
-//             //here you can also pass className, or any other button element attributes
-//             style: {
-//               alignSelf: "center",
-//               background: "black",
-//               border: "none",
-//               borderRadius: "50%",
-//               color: "white",
-//               cursor: "pointer",
-//               fontSize: "20px",
-//               height: 30,
-//               lineHeight: 1,
-//               textAlign: "center",
-//               width: 30,
-//             },
-//             children: <span>{`<`}</span>,
-//           }}
-//           responsiveProps={[
-//             {
-//               itemsToShow: 1,
-//               itemsToScroll: 1,
-//               minWidth: 768,
-//             },
-//           ]}
-//           speed={400}
-//           easing="linear"
-//         >
-//           {projects.map((project) => (
-//             <div className="articleSize">
-//               <SingleProject project={project}></SingleProject>
-//             </div>
-//           ))}
-//         </ReactSimplyCarousel>
-//       </div>
-//     </main>
-//   );
-// };
 
 export default Projects;

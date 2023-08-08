@@ -20,11 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className="darkBlue font-size h-screen w-screen"
-
-        // className={roboto.className}
-      >
+      <body className="darkBlue font-size h-screen w-screen">
         <Header name="Sonja Kitanoska" pages={pages} />
         {children}
         <Footer />

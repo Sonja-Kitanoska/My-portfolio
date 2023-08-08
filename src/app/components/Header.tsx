@@ -32,10 +32,6 @@ const Header = ({ name, pages }: HeaderProps) => {
               "
               href={page.link}
               key={page.id}
-              // className=" px-4 py-1 hover:bg-white hover:text-blue-600 hover:rounded-full active:bg-blue-200 active:text-blue-600 focus:bg-white focus:rounded-full
-              // focus:text-blue-600"
-
-              // " hover:underline underline-offset-2 hover:scale-105 font-medium"
             >
               {page.label}
             </Link>

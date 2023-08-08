@@ -1,6 +1,5 @@
-import image1 from "../../../public/images/photo-sonja.jpg";
-import image2 from "../../../public/images/photo-ema.jpg";
-import uuid4 from "uuid4";
+import image1 from "../../../public/images/projectProject.png";
+import image2 from "../../../public/images/react-gallery.png";
 
 export const pages = [
   {
@@ -57,10 +56,6 @@ export const projects = [
         text: "Source Code",
         url: "https://github.com/Sonja-Kitanoska/react-gallery",
       },
-      // {
-      //   text: "Live Site",
-      //   url: "https://weather-app.richardbrown.net",
-      // },
     ],
   },
 ];

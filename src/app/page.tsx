@@ -21,12 +21,12 @@ const Home = () => {
           <div>
             <h1 className="font-black text-3xl orange">Hello,</h1>
             <h1 className="font-black text-3xl orange mt-2">
-              I'm Sonja Kitanoska.
+              I&aposm Sonja Kitanoska.
             </h1>
           </div>
           <p className="text-smokey text-xl ">
             A full-stack developer based in Stockholm. The best developer on
-            planet Earth. I haven't been to other planets yet.
+            planet Earth. I haven&apost been to other planets yet.
           </p>
           <div className="w-1/2 sm:w-1/6 flex mt-2">
             <Link href="mailto:avramoskamkd@gmail.com">
