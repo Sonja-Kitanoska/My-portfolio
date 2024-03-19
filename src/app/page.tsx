@@ -10,7 +10,7 @@ const Home = () => {
             priority
             width={600}
             height={960}
-            aria-label={"image of sonja-kitanoska"}
+            aria-label={"image of Sonja Kitanoska"}
             alt={"image of sonja-kitanoska"}
             src={"/images/photo-sonja.jpg"}
             className="profileImage"
@@ -21,12 +21,13 @@ const Home = () => {
           <div>
             <h1 className="font-black text-3xl orange">Hello,</h1>
             <h1 className="font-black text-3xl orange mt-2">
-              I&apos; Sonja Kitanoska.
+              I&apos;m Sonja Kitanoska.
             </h1>
           </div>
           <p className="text-smokey text-xl ">
-            A full-stack developer based in Stockholm. The best developer on
-            planet Earth. I haven&apos;t been to other planets yet.
+          A full-stack developer based in Stockholm. The best developer on planet Earth. 
+          I haven&apos;t been to other planets yet.
+
           </p>
           <div className="w-1/2 sm:w-1/6 flex mt-2">
             <Link href="mailto:avramoskamkd@gmail.com">
