@@ -2,7 +2,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 import { Roboto, Dancing_Script } from "next/font/google";
-import { pages, aboutMeData } from "./data/data";
+import { pages } from "./data/data";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
@@ -19,12 +19,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="darkBlue font-size h-screen w-screen">
+
+   
+ <html lang="en" className="w-screen">
+      <body className="min-h-screen w-screen m-0 p-0 mx-auto">
+
         <Header name="Sonja Kitanoska" pages={pages} />
-        {children}
+        <main className="md:pt-52 pt-32 mx-auto">{children}</main>
         <Footer />
-      </body>
+        </body>
     </html>
+      
+       
+
+    
   );
 }

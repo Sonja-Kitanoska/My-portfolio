@@ -3,10 +3,9 @@ import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="w-screen py-4 z-20 absolute mt-4 mb-0 bg-zinc-300 font-size ">
+    <footer className="w-screen py-4 z-20 absolute font-size">
       <div className="flex flex-col items-center justify-center gap-1.5 w-full">
-        <p className="fontSize">Connect on:</p>
-        <div className="flex -mt-2">
+        <div className="flex -mt-2 text-sky-900">
           <a href="https://github.com/Sonja-Kitanoska" target="_blank">
             <BsGithub className="icons" />
           </a>
@@ -16,12 +15,7 @@ const Footer = () => {
           >
             <BsLinkedin className="icons" />
           </a>
-          <a
-            href="https://instagram.com/avramoskamkd?igshid=MmIzYWVlNDQ5Yg=="
-            target="_blank"
-          >
-            <BsInstagram className="icons" />
-          </a>
+       
         </div>
       </div>
     </footer>

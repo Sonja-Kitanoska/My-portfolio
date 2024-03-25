@@ -14,7 +14,7 @@ const SingleProject: React.FC<ProjectType> = (project) => {
       <div className="md:flex md:items-center md:justify-center md:w-1/2">
         <Image
           priority
-          className="w-full object-contain object-center h-48 w-96  "
+          className="w-full object-contain object-center h-48  "
           src={image}
           alt="photo of the project"
           width={200}
