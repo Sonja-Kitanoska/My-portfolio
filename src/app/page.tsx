@@ -7,7 +7,7 @@ import { Button } from "@mui/material";
 
 const Home = () => {
   return (
-    <div className="w-full min-h-screen mx-auto">
+    <div className="w-full min-h-screen">
 
       <section id="Home" className="scroll-mt-56 flex flex-col md:flex-row gap-20 md:justify-center md:items-center px-10 md:px-24 mb-6 md:mb-20">
         <div className="">
@@ -62,7 +62,7 @@ const Home = () => {
 
 
 
-   <section id="Projects" className="scroll-mt-24 px-4 p-10">
+   <section id="Projects" className="scroll-mt-24 p-10">
     <ProjectCardList/>
     </section>
 
