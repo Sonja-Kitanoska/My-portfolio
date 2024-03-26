@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
 
-      <section id="Home" className="scroll-mt-56 px-6 flex flex-col md:flex-row gap-10 md:gap-20 md:justify-center md:items-center p-2 md:px-16 mb-12 md:mb-36">
+      <section id="Home" className="scroll-mt-52 px-6 flex flex-col md:flex-row gap-10 md:gap-20 md:justify-center md:items-center p-2 md:px-16 mb-12 md:mb-48 lg:mb-56 lg:pt-16">
         <div className="w-48 h-48 md:w-56 md:h-56 lg:w-[300px] lg:h-[300px] self-center">
           <Image
             priority
