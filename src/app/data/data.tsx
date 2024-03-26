@@ -1,5 +1,4 @@
-import image1 from "../../../public/images/projectProject.png";
-import image2 from "../../../public/images/react-gallery.png";
+
 
 export const pages = [
   {
@@ -32,7 +31,7 @@ export const projects = [
     body1:
       "[project Project] is a collaborative and interactive project management application. It was ideated in two hours, planned in a day, then developed within the span of 11 days by four full-stack Javascript students as part of the winter 2023 class from the School of Applied Learning and Technology (</salt>).",
     body2: "TypeScript, NextJS v.13, FireBase Auth, FireStore, Bing Image API ",
-    image: image1,
+    image: '/images/projectProject.png',
     links: [
       {
         text: "Source Code",
@@ -50,7 +49,7 @@ export const projects = [
     body1:
       "This project was built as part of a mob-programming exercise at the School of AppliedTechnology (</salt>). It was built using React with the typescript template. Routing was done using both React Router and React Router Link.",
     body2: "Typescript, React, API Unsplash",
-    image: image2,
+    image: '/images/react-gallery.png',
     links: [
       {
         text: "Source Code",
@@ -58,4 +57,22 @@ export const projects = [
       },
     ],
   },
+  {
+  id: 3,
+  title: "TalentHub",
+  body1:
+    "This project was built as part of a mob-programming exercise at the School of AppliedTechnology (</salt>)It was built using React with the typescript template.  Routing was done using both React Router and React Router LinkTypescript, React, API Unsplash",
+  image: '/images/talentHub.png',
+  links: [
+    {
+      text: "Source Code",
+      url: "https://github.com/Sonja-Kitanoska/jobMatches",
+    },
+    {
+      text: "Live Site",
+      url: "https://job-matches.vercel.app",
+    },
+  ],
+},
+
 ];
