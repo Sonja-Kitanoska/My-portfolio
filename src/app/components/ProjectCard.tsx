@@ -17,7 +17,7 @@ type ProjectType = {
 
 const ProjectCard = (props:ProjectType) => {
   return (
-  <Card sx={{ maxWidth: 400}} className="p-4 border shadow-lg min-w-[300px]">
+  <Card sx={{ maxWidth: 400,  maxHeight:500}} className="p-4 border shadow-lg">
        <Typography gutterBottom variant="h5" component="div">
         {props.title}
       </Typography>
@@ -29,7 +29,7 @@ const ProjectCard = (props:ProjectType) => {
       className="rounded"
     />
     </div>
-    <CardContent sx={{ maxHeight: '160px', overflowY: 'auto' }}>
+    <CardContent sx={{ maxHeight: '160px', overflowY: 'auto' }} className="text-start">
       <Typography variant="body2" color="text.secondary">
       {props.body1}
       </Typography>

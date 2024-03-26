@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .icons {
   @apply text-2xl sm:text-3xl m-2;
  
@@ -34,15 +35,11 @@
   }
 }
 
-.orange {
-  background-image: linear-gradient(360deg, orange, #ed4f05);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 
 .font-size {
   @apply text-base
-  lg:text-lg xl:text-xl;
+  xl:text-lg;
 }
 
 .darkBlue {
