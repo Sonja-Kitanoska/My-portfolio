@@ -4,7 +4,7 @@ import Image from "next/image";
 const Tools = () => {
   return (
     <div className="flex flex-col">
-      <h2 className="text-xl font-semibold mb-5">
+      <h2 className="text-2xl mb-5">
         Languages and tools:{" "}
       </h2>
       <div className="flex items-start md:-ml-4 lg:-ml-7">

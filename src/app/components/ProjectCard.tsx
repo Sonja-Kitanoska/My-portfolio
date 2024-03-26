@@ -29,7 +29,7 @@ const ProjectCard = (props:ProjectType) => {
       className="rounded"
     />
     </div>
-    <CardContent sx={{ maxHeight: '160px', overflowY: 'auto' }}>
+    <CardContent sx={{ maxHeight: '160px', overflowY: 'auto' }} className="text-start">
       <Typography variant="body2" color="text.secondary">
       {props.body1}
       </Typography>

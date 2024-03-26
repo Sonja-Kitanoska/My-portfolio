@@ -19,9 +19,9 @@ export const pages = [
 ];
 
 export const aboutMeData = {
-  body: "I studied law but in the pursuit of creativeness in my work life I stumbled upon an online course on JavaScript and decided to give it a shot. JS had me at hello, literally 🙂. Since then I've been constantly learning and improving my skills. It was the School of Applied Technology (</salt>) which helped me complete the journey to my new career.",
+  body: "I studied law but in the pursuit of creativeness in my work life I stumbled upon an online course on JavaScript and decided to give it a shot. JavaScript had me at hello, literally 🙂. Since then I've been constantly learning and improving my skills. It was the School of Applied Technology (</SALT>) which helped me complete the journey to my new career.",
   body1:
-    "As a beginner, I'm constantly seeking new challenges and projects to work on as I believe that working on projects is the best way to learn and grow as a developer. I am always eager to take on new challenges and collaborate with others.",
+    "I am constantly seeking new challenges and projects to work on as I believe that working on projects is the best way to learn and grow as a developer. I am always eager to take on new challenges and collaborate with others.",
 };
 
 export const projects = [

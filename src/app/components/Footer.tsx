@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="w-screen py-4 z-20 absolute font-size">
       <div className="flex flex-col items-center justify-center gap-1.5 w-full">
-        <div className="flex -mt-2 text-sky-900">
+        <div className="flex -mt-2 text-[#1976D2]">
           <a href="https://github.com/Sonja-Kitanoska" target="_blank">
             <BsGithub className="icons" />
           </a>

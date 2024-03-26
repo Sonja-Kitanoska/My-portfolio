@@ -1,5 +1,5 @@
 
-import Link from "next/link";
+
 import React from "react";
 import { HeaderProps } from "./Header";
 
@@ -7,11 +7,11 @@ const Navbar = ({pages}:HeaderProps) => {
    
 
   return  (
-  <nav className="flex md:gap-10 flex-col md:flex-row items-center">
+  <nav className="flex gap-10 items-center">
 
   {pages.map((page) => (
 <a
-      className="text-sky-900
+      className="
       "
       href={`#${page.label}`}
       key={page.id}

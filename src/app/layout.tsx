@@ -21,18 +21,13 @@ export default function RootLayout({
   return (
 
    
-<html className="">
+
       <body className="min-h-screen w-full">
 
         <Header name="Sonja Kitanoska" pages={pages} />
-        <main className="md:pt-52 pt-32">{children}</main>
+        <main className="my-36 md:mt-40 xl:text-xl">{children}</main>
         <Footer />
         </body>
-        </html>
- 
       
-       
-
-    
   );
 }
