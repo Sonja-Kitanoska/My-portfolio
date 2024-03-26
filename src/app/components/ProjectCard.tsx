@@ -17,7 +17,7 @@ type ProjectType = {
 
 const ProjectCard = (props:ProjectType) => {
   return (
-  <Card sx={{ maxWidth: 400}} className="p-4 border shadow-lg min-w-[300px]">
+  <Card sx={{ maxWidth: 400,  maxHeight:500}} className="p-4 border shadow-lg">
        <Typography gutterBottom variant="h5" component="div">
         {props.title}
       </Typography>
