@@ -2,6 +2,7 @@
 
 import React from "react";
 import { HeaderProps } from "./Header";
+import Link from "next/link";
 
 const Navbar = ({pages}:HeaderProps) => {
    
@@ -10,7 +11,7 @@ const Navbar = ({pages}:HeaderProps) => {
   <nav className="flex gap-10 items-center">
 
   {pages.map((page) => (
-<a
+<Link
       className="
       "
       href={`#${page.label}`}
@@ -19,7 +20,7 @@ const Navbar = ({pages}:HeaderProps) => {
       
     >
       {page.label}
-      </a>
+      </Link>
   ))}
   
 </nav>
