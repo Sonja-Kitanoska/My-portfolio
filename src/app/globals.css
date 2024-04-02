@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .icons {
   @apply text-2xl sm:text-3xl m-2;
- 
 }
 
 .profileImage {
@@ -34,8 +32,6 @@
     -webkit-text-fill-color: transparent;
   }
 }
-
-
 
 .font-size {
   @apply text-base
@@ -88,4 +84,3 @@
   font-size: 30px;
   z-index: 2;
 }
-

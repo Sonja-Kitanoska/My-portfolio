@@ -15,7 +15,6 @@ const Footer = () => {
           >
             <BsLinkedin className="icons" />
           </a>
-       
         </div>
       </div>
     </footer>

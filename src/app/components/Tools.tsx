@@ -4,9 +4,7 @@ import Image from "next/image";
 const Tools = () => {
   return (
     <div className="flex flex-col">
-      <h2 className="text-2xl mb-5">
-        Languages and tools:{" "}
-      </h2>
+      <h2 className="text-2xl mb-5">Languages and tools: </h2>
       <div className="flex justify-center md:justify-start items-center content-center gap-1 md:w-8/12">
         <div className="">
           <Image
@@ -26,7 +24,7 @@ const Tools = () => {
             className="object-contain h-8 md:w-12 md:h-12"
           />
         </div>
-        <div >
+        <div>
           <Image
             src="/logos/node-icon.png"
             width={120}
