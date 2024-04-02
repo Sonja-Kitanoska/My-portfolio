@@ -6,6 +6,7 @@ import {
   CardActions,
   CardMedia,
   Link,
+  Tooltip,
   Typography
 } from "@mui/material";
 
@@ -42,6 +43,7 @@ const ProjectCard = (props: ProjectType) => {
         <Typography variant="body2" color="text.secondary">
           {props.body1}
         </Typography>
+
         <Typography
           variant="body2"
           color="text.secondary"

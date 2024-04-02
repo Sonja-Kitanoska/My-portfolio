@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <body className="min-h-screen w-full">
       <Header name="Sonja Kitanoska" pages={pages} />
-      <main className="my-36 md:mt-40 xl:text-xl">{children}</main>
+      <main className="mt-36 mb-6 md:mt-40 xl:text-xl">{children}</main>
       <Footer />
     </body>
   );

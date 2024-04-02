@@ -41,25 +41,12 @@ export const projects = [
       }
     ]
   },
+
   {
     id: 2,
-    title: "React Gallery",
-    body1:
-      "This project was built as part of a mob-programming exercise at the School of AppliedTechnology (</salt>). It was built using React with the typescript template. Routing was done using both React Router and React Router Link.",
-    body2: "Typescript, React, API Unsplash",
-    image: "/images/react-gallery.png",
-    links: [
-      {
-        text: "Source Code",
-        url: "https://github.com/Sonja-Kitanoska/react-gallery"
-      }
-    ]
-  },
-  {
-    id: 3,
     title: "TalentHub",
     body1:
-      "We are building a full-stack application designed to match our database of developers with available jobs in Stockohlm. Our job data is provided by the jobtechdev API.This matching is done by assessing the skill requirements of a given job and providing a list of relevant developers, ordered by the number of matching skills they have. The goal is to refine this searching method as we build the project futher.The application also allows for the adding of developers and their skills to the database.",
+      "A full-stack application designed to match our database of developers with available jobs in Stockohlm. Our job data is provided by the jobtechdev API. This matching is done by assessing the skill requirements of a given job and providing a list of relevant developers, ordered by the number of matching skills they have. The application also allows for the adding of developers and their skills to the database.",
     image: "/images/talentHub.png",
     links: [
       {
@@ -69,6 +56,20 @@ export const projects = [
       {
         text: "Live Site",
         url: "https://job-matches.vercel.app"
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "React Gallery",
+    body1:
+      "This project was built as part of a mob-programming exercise at the School of AppliedTechnology (</salt>). It was built using React with the typescript template. Routing was done using both React Router and React Router Link.",
+    body2: "Typescript, React, API Unsplash",
+    image: "/images/react-gallery.png",
+    links: [
+      {
+        text: "Source Code",
+        url: "https://github.com/Sonja-Kitanoska/react-gallery"
       }
     ]
   }
