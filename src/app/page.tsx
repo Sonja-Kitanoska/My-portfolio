@@ -58,16 +58,16 @@ const Home = () => {
 
       <section
         id="About"
-        className="scroll-mt-28 p-6 md:p-20 md:mb-24 mb-6 bg-blue-200/30 md:mt-28"
+        className="scroll-mt-28 md:p-32 p-8 mb-6 md:mb-20 bg-blue-200/30 md:mt-48 lg:mt-72"
       >
         <h1 className="text-3xl">About Me</h1>
-        <p className="mt-3"> {aboutMeData.body}</p>
-        <p className="mt-3 mb-12"> {aboutMeData.body1}</p>
+        <p className="mt-3 md:text-lg"> {aboutMeData.body}</p>
+        <p className="mt-3 mb-12 md:text-lg"> {aboutMeData.body1}</p>
         <Tools />
       </section>
 
       <section id="Projects" className="scroll-mt-32 px-6 md:px-20 text-center">
-        <h1 className="text-3xl my-10">My Projects</h1>
+        <h1 className="text-3xl my-10 mb-10">My Projects</h1>
         <ProjectCardList />
       </section>
     </>
