@@ -46,9 +46,8 @@ const Home = () => {
           <div className="w-1/2 sm:w-1/6 flex mt-2">
             <Link href="mailto:avramoskamkd@gmail.com">
               <Button
-                variant="outlined"
-                sx={{ width: ["110px"] }}
-                className="w-12"
+                variant="contained"
+                sx={{ minWidth: ["100px"], fontSize: "small" }}
               >
                 Email me
               </Button>
