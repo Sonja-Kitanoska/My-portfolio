@@ -28,9 +28,15 @@ const ProjectCard = (props: ProjectType) => {
       <Typography gutterBottom variant="h5" component="div">
         {props.title}
       </Typography>
-      <div className="flex justify-center">
+      <div style={{}}>
         <CardMedia
-          sx={{ height: 180, width: 260 }}
+          sx={{
+            width: "100%",
+            height: "180px",
+            objectFit: "cover",
+            objectPosition: "center",
+            marginBottom: "10px"
+          }}
           image={props.image}
           title="project's image"
           className="rounded"

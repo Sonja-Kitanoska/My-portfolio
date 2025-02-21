@@ -72,5 +72,39 @@ export const projects = [
         url: "https://github.com/Sonja-Kitanoska/react-gallery"
       }
     ]
+  },
+  {
+    id: 4,
+    title: "Street Artists",
+    body1:
+      "The goal of the StreetARTists project is to create a web platform that allows street artists to track their income, showcase their masterpieces, and engage with a global audience. This project helps street artists track income, expenses, and performance stats while providing professional profile pages to showcase their work and boost discoverability. ",
+    image: "/images/street-artists.png",
+    links: [
+      {
+        text: "Source Code",
+        url: "https://github.com/Sonja-Kitanoska/StreetArtists"
+      },
+      {
+        text: "Live Site",
+        url: "https://street-artists-brainster.netlify.app/"
+      }
+    ]
+  },
+  {
+    id: 5,
+    title: "Advent Calendar",
+    body1:
+      "This app is a special gift I created for my kids to make their December mornings more magical. It also served as a fun way for me to practice vanilla JavaScript while developing something meaningful. The app unlocks one surprise or activity every day in December, bringing joy and excitement to the countdown until Christmas. For times when it’s not December, I included a demo mode so you can explore and enjoy the app anytime! ",
+    image: "/images/advent-calendar.png",
+    links: [
+      {
+        text: "Source Code",
+        url: "https://github.com/Sonja-Kitanoska/AdventCalendarApp/"
+      },
+      {
+        text: "Live Site",
+        url: "https://advent-app.netlify.app/"
+      }
+    ]
   }
 ];
