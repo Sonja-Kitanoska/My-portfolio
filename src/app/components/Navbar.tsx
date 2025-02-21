@@ -7,8 +7,7 @@ const Navbar = ({ pages }: HeaderProps) => {
     <nav className="flex gap-10 items-center">
       {pages.map((page) => (
         <Link
-          className="
-      "
+          className="text-gray-700 hover:text-blue-500 active:text-blue-500"
           href={`#${page.label}`}
           key={page.id}
         >
