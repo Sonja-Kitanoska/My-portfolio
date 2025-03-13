@@ -1,8 +1,12 @@
-import React from "react";
+"use client";
 import { HeaderProps } from "./Header";
 import Link from "next/link";
+import { BsToggleOn, BsToggleOff } from "react-icons/bs";
+import { useThemeContext } from "../contexts/ThemeContext";
 
 const Navbar = ({ pages }: HeaderProps) => {
+  const { theme, toggleTheme } = useThemeContext();
+
   return (
     <nav className="flex gap-10 items-center">
       {pages.map((page) => (
@@ -14,6 +18,20 @@ const Navbar = ({ pages }: HeaderProps) => {
           {page.label}
         </Link>
       ))}
+
+      {theme === "light" ? (
+        <BsToggleOff
+          onClick={toggleTheme}
+          size={24}
+          className="cursor-pointer"
+        />
+      ) : (
+        <BsToggleOn
+          onClick={toggleTheme}
+          size={24}
+          className="cursor-pointer text-black"
+        />
+      )}
     </nav>
   );
 };

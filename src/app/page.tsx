@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Tools from "./components/Tools";
@@ -5,10 +6,12 @@ import { aboutMeData } from "./data/data";
 import ProjectCardList from "./components/ProjectCardList";
 import { Button } from "@mui/material";
 import { Dancing_Script } from "next/font/google";
+import { useThemeContext } from "./contexts/ThemeContext";
 
 const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" });
 
 const Home = () => {
+  const { theme } = useThemeContext();
   return (
     <>
       <section
@@ -46,8 +49,17 @@ const Home = () => {
           <div className="w-1/2 sm:w-1/6 flex mt-2">
             <Link href="mailto:avramoskamkd@gmail.com">
               <Button
-                variant="outlined"
-                sx={{ minWidth: ["100px"], fontSize: "small" }}
+                variant={theme === "light" ? "outlined" : "contained"}
+                sx={{
+                  minWidth: ["110px"],
+                  fontSize: "14px",
+                  fontWeight: "semibold"
+                }}
+                className={`transition-all duration-300 ease-in-out ${
+                  theme === "dark"
+                    ? "bg-blue-500 text-white border-blue-500 hover:bg-blue-600"
+                    : "border-blue-500 text-blue-500 hover:border-blue-600 hover:bg-blue-500 hover:text-white"
+                }`}
               >
                 Email me
               </Button>
