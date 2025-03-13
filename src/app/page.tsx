@@ -8,10 +8,15 @@ import ProjectCardList from "./components/ProjectCardList";
 import { Button } from "@mui/material";
 import { Dancing_Script } from "next/font/google";
 import { useThemeContext } from "./contexts/ThemeContext";
+import { useEffect } from "react";
 
 const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" });
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Sonja's Portfolio";
+  }, []);
+
   const { theme } = useThemeContext();
   return (
     <>
@@ -23,7 +28,7 @@ const Home = () => {
         />
         <meta name="keywords" content="portfolio, next.js, react, website" />
         <meta name="author" content="Sonja Kitanoska" />
-        {/* Add other meta tags as needed */}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <section
         id="Home"
