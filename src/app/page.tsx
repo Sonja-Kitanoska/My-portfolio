@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Tools from "./components/Tools";
@@ -14,6 +15,16 @@ const Home = () => {
   const { theme } = useThemeContext();
   return (
     <>
+      <Head>
+        <title>Sonja&apos;s Portfolio</title>
+        <meta
+          name="description"
+          content="A portfolio to showcase my technical skills"
+        />
+        <meta name="keywords" content="portfolio, next.js, react, website" />
+        <meta name="author" content="Sonja Kitanoska" />
+        {/* Add other meta tags as needed */}
+      </Head>
       <section
         id="Home"
         className="scroll-mt-52 px-6 flex flex-col md:flex-row gap-10 md:gap-20 md:justify-center md:items-center p-2 md:px-16 mb-12 md:mb-48 lg:mb-56 lg:pt-16"
