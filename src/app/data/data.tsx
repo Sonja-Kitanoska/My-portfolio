@@ -106,5 +106,22 @@ export const projects = [
         url: "https://advent-app.netlify.app/"
       }
     ]
+  },
+  {
+    id: 5,
+    title: "Fix Das",
+    body1:
+      "This is the client-side of a web application that connects (clients) users with trusted handymen for various home services. Built with a mobile-first approach, the app allows clients to post job requests, browse professionals, communicate via chat, and manage bookings. This project was developed as the final assignment for the Brainster's Academy for Frontend Development.",
+    image: "/images/fix-das.png",
+    links: [
+      {
+        text: "Source Code",
+        url: "https://github.com/Sonja-Kitanoska/FixDas/tree/main/Fix%20Das"
+      },
+      {
+        text: "Live Site",
+        url: "https://fix-das.netlify.app/"
+      }
+    ]
   }
 ];

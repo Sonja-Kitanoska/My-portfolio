@@ -9,6 +9,7 @@ import {
   Tooltip,
   Typography
 } from "@mui/material";
+import { useThemeContext } from "../contexts/ThemeContext";
 
 type ProjectType = {
   id: number;
@@ -20,21 +21,26 @@ type ProjectType = {
 };
 
 const ProjectCard = (props: ProjectType) => {
+  const { theme, toggleTheme } = useThemeContext();
   return (
     <Card
       sx={{ maxWidth: 400, maxHeight: 500 }}
       className="p-4 border shadow-lg"
+      style={{
+        backgroundColor: theme === "light" ? "white" : "#525B66",
+        color: theme === "light" ? "black" : "white"
+      }}
     >
       <Typography gutterBottom variant="h5" component="div">
         {props.title}
       </Typography>
-      <div style={{}}>
+      <div>
         <CardMedia
           sx={{
+            height: "200px",
             width: "100%",
-            height: "180px",
             objectFit: "cover",
-            objectPosition: "center",
+            objectPosition: "top",
             marginBottom: "10px"
           }}
           image={props.image}
@@ -46,7 +52,14 @@ const ProjectCard = (props: ProjectType) => {
         sx={{ maxHeight: "160px", overflowY: "auto" }}
         className="text-start"
       >
-        <Typography variant="body2" color="text.secondary">
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          style={{
+            backgroundColor: theme === "light" ? "white" : "#525B66",
+            color: theme === "light" ? "black" : "white"
+          }}
+        >
           {props.body1}
         </Typography>
 
