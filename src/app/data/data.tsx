@@ -17,9 +17,9 @@ export const pages = [
 ];
 
 export const aboutMeData = {
-  body: "I studied law but in the pursuit of creativeness in my work life I stumbled upon an online course on JavaScript and decided to give it a shot. JavaScript had me at hello, literally 🙂. Since then I've been constantly learning and improving my skills. It was the School of Applied Technology (</SALT>) which helped me complete the journey to my new career.",
+  body: "Hello, I’m Sonja. After a 13-year career working at the Macedonian Parliament, I decided to pursue a more creative path and transition into software development. What started as a curiosity through an online JavaScript course quickly turned into a deep passion—JavaScript had me at hello, literally 🙂. Since then, I’ve been constantly learning and evolving. I’ve completed several formal training programs, including an intensive full-stack development bootcamp at the School of Applied Technology (</SALT>) in Stockholm and a 12-month frontend development academy at Brainster in Skopje.",
   body1:
-    "I am constantly seeking new challenges and projects to work on as I believe that working on projects is the best way to learn and grow as a developer. I am always eager to take on new challenges and collaborate with others."
+    "Along the way, I’ve built real-world projects, collaborated in agile teams, and strengthened both my frontend and full-stack skills. Most recently, I worked as a frontend developer at Revam in Malmö, where I contributed to building a new AI-driven platform using Next.js, focusing on clean design and intuitive user experience. I’m actively looking for full-time or part-time opportunities and am available to begin work immediately. I believe the best way to grow is through hands-on experience, and I’m always eager to take on new challenges, build meaningful projects, and collaborate with others."
 };
 
 export const projects = [
