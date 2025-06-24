@@ -59,22 +59,9 @@ export const projects = [
       }
     ]
   },
+
   {
     id: 3,
-    title: "React Gallery",
-    body1:
-      "This project was built as part of a mob-programming exercise at the School of AppliedTechnology (</salt>). It was built using React with the typescript template. Routing was done using both React Router and React Router Link.",
-    body2: "Typescript, React, API Unsplash",
-    image: "/images/react-gallery.png",
-    links: [
-      {
-        text: "Source Code",
-        url: "https://github.com/Sonja-Kitanoska/react-gallery"
-      }
-    ]
-  },
-  {
-    id: 4,
     title: "Street Artists",
     body1:
       "The goal of the StreetARTists project is to create a web platform that allows street artists to track their income, showcase their masterpieces, and engage with a global audience. This project helps street artists track income, expenses, and performance stats while providing professional profile pages to showcase their work and boost discoverability. ",
@@ -91,7 +78,7 @@ export const projects = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     title: "Advent Calendar",
     body1:
       "This app is a special gift I created for my kids to make their December mornings more magical. It also served as a fun way for me to practice vanilla JavaScript while developing something meaningful. The app unlocks one surprise or activity every day in December, bringing joy and excitement to the countdown until Christmas. For times when it’s not December, I included a demo mode so you can explore and enjoy the app anytime! ",
@@ -121,6 +108,37 @@ export const projects = [
       {
         text: "Live Site",
         url: "https://fix-das.netlify.app/"
+      }
+    ]
+  },
+  {
+    id: 6,
+    title: "Kotur Kafe i Film",
+    body1:
+      "This project was created during a 48-hour hackathon organized by Brainster, where I was part of the frontend team. Kotur Kafe i Film aims to be a multi-functional hub that blends hospitality, culture, and entertainment. The client wanted a digital platform that reflects this diversity, encourages engagement, and makes bookings easy.",
+    image: "/images/kotur.png",
+    links: [
+      {
+        text: "Source Code",
+        url: "https://github.com/Sonja-Kitanoska/Kotur"
+      },
+      {
+        text: "Live Site",
+        url: "https://kotur.netlify.app/"
+      }
+    ]
+  },
+  {
+    id: 7,
+    title: "React Gallery",
+    body1:
+      "This project was built as part of a mob-programming exercise at the School of AppliedTechnology (</salt>). It was built using React with the typescript template. Routing was done using both React Router and React Router Link.",
+    body2: "Typescript, React, API Unsplash",
+    image: "/images/react-gallery.png",
+    links: [
+      {
+        text: "Source Code",
+        url: "https://github.com/Sonja-Kitanoska/react-gallery"
       }
     ]
   }
