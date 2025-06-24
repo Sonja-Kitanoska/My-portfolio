@@ -32,7 +32,7 @@ const Home = () => {
       </Head>
       <section
         id="Home"
-        className="scroll-mt-52 px-6 flex flex-col md:flex-row gap-10 md:gap-20 md:justify-center md:items-center p-2 md:px-16 mb-12 md:mb-48 lg:mb-56 lg:pt-16"
+        className="scroll-mt-52 px-6 flex flex-col md:flex-row gap-10 md:gap-20 md:justify-center md:items-center p-2 md:px-16 mb-12 md:mb-48 lg:mb-56 lg:pt-16 "
       >
         <div className="w-48 h-48 md:w-56 md:h-56 lg:w-[300px] lg:h-[300px] self-center">
           <Image
@@ -86,7 +86,7 @@ const Home = () => {
 
       <section
         id="About"
-        className="scroll-mt-28 md:p-32 p-8 mb-6 md:mb-20 bg-blue-200/30 md:mt-48 lg:mt-72"
+        className="scroll-mt-28 md:p-32 md:px-16 p-8 mb-6 md:mb-20 bg-blue-200/30 md:mt-48 lg:mt-72"
       >
         <h1 className="text-3xl">About Me</h1>
         <p className="mt-3 md:text-lg"> {aboutMeData.body}</p>
@@ -94,7 +94,7 @@ const Home = () => {
         <Tools />
       </section>
 
-      <section id="Projects" className="scroll-mt-32 px-6 md:px-20 text-center">
+      <section id="Projects" className="scroll-mt-32 px-6 md:px-16 text-center">
         <h1 className="text-3xl my-10 mb-10">My Projects</h1>
         <ProjectCardList />
       </section>
